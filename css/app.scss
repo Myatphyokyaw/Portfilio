@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-family-sans-serif: 'Poppins', sans-serif;
+//$primary : #6957d9;
+
+$primary: #007bff;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+.header {
+  background-color: rgba(255, 255, 255, 0.62);
+  top: 0;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.svg {
+  fill: var(--bs-primary);
+}
+
+
+#toggle-icon {
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  background-color: var(--bs-primary);
+  width: 35px;
+  height: 3px;
+  transition: 0.5s;
+  margin: 6px 0;
+}
+
+.rotate-icon .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+.btn,.btn-lg{
+  color: white;
+}
+
+.rotate-icon .bar2 {
+  opacity: 0;
+}
+
+.rotate-icon .bar3 {
+  -webkit-transform: rotate(42deg) translate(-9px, -8px);
+  transform: rotate(42deg) translate(-9px, -8px);
+}
+
+.o-n:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.home-img {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 576px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    margin-bottom: 134px;
+  }
+  .aa {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .home-text {
+    padding: 0px 25px;
+  }
+  .home-btn {
+    display: none;
+  }
+  .home-img {
+    margin-top: 0px;
+  }
+  .about-text {
+    font-size: 14px;
+    text-align: center;
+  }
+  .contact-info {
+    display: none;
+  }
+  .testimonial-text{
+    font-size: 11px;
+  }
+  .client-name{
+    font-size: 19px;
+  }
+}
